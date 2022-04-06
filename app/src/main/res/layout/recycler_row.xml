@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#C4C4C4"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_vera_edge_big" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvHomeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_toLeftOf="@+id/image_arrow"
+        android:layout_toRightOf="@+id/card"
+        android:text="Home Number"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvSN"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHomeNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/image_arrow"
+        android:layout_toRightOf="@+id/card"
+        android:text="SN:24as5a5"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/image_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+</RelativeLayout>
